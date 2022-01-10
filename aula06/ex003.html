@@ -9,6 +9,12 @@
         body {
           background: black url('thanks-i-hate-it-thumbs-up-72175150.png') center center no-repeat fixed;
           background-size: cover;
+          color: white;
+          font: normal 20pt Arial;
+        }
+
+        h1 {
+            color: white;
         }
     </style>
 </head>
@@ -16,9 +22,12 @@
     <h1>heloooo world!</h1>
     <p>Nice! Thumbs Up!.</p>
     <script>
-        window.alert('check this out!')
-        window.confirm('do you like thisss!')
-        window.prompt('what your name?')
+      var n1 = Number(window.prompt('Digite um número: ')) // comando prompt trata como string
+      var n2 = Number(window.prompt('Digite outro número: '))
+      var s = n1 + n2
+      window.alert(`A soma entre ${n1} e ${n2} é ugual a ${s}`) // + concatenação
+      // (number + number) para adição
+      // (string + string) para concatenação
     </script>
 </body>
 </html>

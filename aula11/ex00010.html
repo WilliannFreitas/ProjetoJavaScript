@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qual a sua Nacionalidade?</title>
+</head>
+<body>
+    <h1>Qual a sua Nacionalidade?</h1>
+    Se você mora em: <input type="text" name="txt1" id="txt1"/>
+    <input type="button" value="Verificar" onclick="Mostrar()"/>
+    <div id="res">
+
+    </div>
+    <script>
+        function Mostrar(){
+            var nacionalidadeDigitada = document.getElementById('txt1').value.toUpperCase()
+            var res = document.getElementById("res")
+
+            res.innerHTML = `<p>Se você vive no <strong>Brasil</strong>, então você é Brasileiro!</p>`
+        if(nacionalidadeDigitada == 'BRASIL') {
+            res.innerHTML += `<p>Você é <strong>Brasileiro!</strong></p>`
+        }
+        else {
+            res.innerHTML += `<p>Você é <strong>Estrangeiro!</strong></p>`
+        }
+
+        }    
+    </script>
+</body>
+</html>
